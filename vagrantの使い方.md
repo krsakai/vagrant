@@ -10,9 +10,11 @@ $ vagrant init centos/6
 => vagrantfile でVMを追加する設定ファイルを追加
 
 $ vi Vagrantfile
+```
 # config.vm.network "private_network", ip: "192.168.33.10"
 ↓
 config.vm.network "private_network", ip: "192.168.33.10"
+```
 に変更 (NAT + ホストマシン の NICを追加)
 
 $ vagrant up			=> 起動
